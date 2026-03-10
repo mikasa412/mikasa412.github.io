@@ -1,0 +1,30 @@
+body {
+    background-color:151525;
+}
+p {
+    color:white;
+}
+div {
+    margin-bottom:6px;
+    color:white;
+}
+.main {
+    background:border-box;
+    background-color:black;
+    color:whitesmoke;
+    cursor:pointer;
+}
+.ach {
+    background:border-box;
+    padding-left:2px;
+    padding-right:2px;
+    background-color:darkgrey;
+    color:whitesmoke;
+    cursor:not-allowed;
+}
+.achC {
+    background:border-box;
+    background-color:green;
+    color:whitesmoke;
+    cursor:inherit;
+}
