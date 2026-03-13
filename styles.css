@@ -18,13 +18,18 @@ div {
     background:border-box;
     padding-left:2px;
     padding-right:2px;
-    background-color:darkgrey;
+    background-color:darkslategray;
     color:whitesmoke;
     cursor:not-allowed;
 }
 .achC {
     background:border-box;
-    background-color:green;
-    color:whitesmoke;
+    padding-left:2px;
+    padding-right:2px;
+    background-color:limegreen;
+    color:black;
     cursor:inherit;
+}
+.L {
+    display:none;
 }

@@ -1,29 +1,54 @@
 <html>
+    <!--      ALL FILES CONTAIN SPOILERS      -->
+    <!-- if you don't want big things spoiled -->
+    <!--      close this and play blind       -->    
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>random game thing</title>
+        <link rel='stylesheet' href='styles.css'>
+        <title>calc is short for... uhhh...</title>
     </head>
     <body>
-        <script src="index.js"></script>
-        <button class="main" onclick="count('add', 1)">+1</button>
-        <button class="main" onclick="count('mul', 2)">*2</button>
-        <button class='main' onclick="reset()">=1</button>
-        <p>counter: <span id="count">1</span><br><br>objectives:</p>
+        <script src='index.js'></script>
         <div>
+            <button class='main' onclick="count(1, 1)">+1</button>
+            <button class='main' onclick="count(2, 2)">*2</button>
+            <button class='main L' id='b3' onclick="count(2, 3)">*3</button>
+            <button class='main L' id='b4' onclick="count(3, 2)">/2</button>
+            <button class='main L' id='b5' onclick="count(2, 5)">*5</button>
+            <button class='main' onclick="count(0)">=1</button>
+        </div>
+        <p>counter: <span id="count">1</span><br><br>objectives:</p>
+        <div id='row1'>
             big numbers: 
             <button class='ach' id='11' disabled=true>>10</button>
             <button class='ach' id='12' disabled=true>>1K</button>
             <button class='ach' id='13' disabled=true>>1M</button>
+            <button class='ach L' id='14' disabled=true>google!</button>
+            <button class='ach L' id='15' disabled=true>google! exact*</button>
         </div>
-        <div>
+        <div class='L' id='row2'>
+            small numbers:
+            <button class='ach' id='21' disabled=true>0.6328125</button>
+            <button class='ach L' id='22' disabled=true>0.796875</button>
+            <button class='ach L' id='23' disabled=true>0.5390625</button>
+        </div>
+        <div id='row3'>
             funny numbers: 
-            <button class='ach' id='21' disabled=true>nice</button>
-            <button class='ach' id='22' disabled=true>dragon ball z</button>
+            <button class='ach' id='31' disabled=true>nice</button>
+            <button class='ach L' id='32' disabled=true>epic gamer</button>
+            <button class='ach' id='33' disabled=true>dragon ball z</button>
         </div>
-        <div>
+        <div id='row4'>
             ???: 
-            <button class='ach' id='31' disabled=true>zigzag</button>
-            <button class='ach' id='32' disabled=true>break the game</button>
+            <button class='ach' id='41' disabled=true>zigzag</button>
+            <button class='ach L' id='42' disabled=true>zagzig</button>
+            <button class='ach L' id='43' disabled=true>zigzog</button>
+            <button class='ach L' id='44' disabled=true>break the game</button>
+            <button class='ach L' id='45' disabled=true>zogzug</button>
+        </div>
+        <div class='L' id='round'>
+            *js doesn't like really big numbers and will be a little off
+            <br>
+            (don't worry, I account for errors here!)
         </div>
     </body>
 </html>
