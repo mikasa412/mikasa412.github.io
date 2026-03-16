@@ -10,15 +10,16 @@ const obj = {
     '15': [1.0000000000000006e+100, 0, 1],
     '21': [0.6328125, 0, 1, [22, 45]],
     '22': [0.796875, 0, 1, [23]],
-    '23': [0.5390625, 0, 1, ['b5', 15, 'round']],
+    '23': [0.5390625, 0, 1, ['b5', 15]],
     '31': [69, 0, 1],
     '32': [1337, 0, 1],
     '33': [9001, 0, 1, ['b3', 32]],
     '41': [1534, 0, 1, [42]],
-    '42': [1022, 0, 1, [14, 43]],
+    '42': [1022, 0, 1, [14, 43, 46]],
     '43': [1821, 0, 1],
-    '44': [Infinity, 0, 0, ['row2', 'b4']],
-    '45': [1313.6816711425781, 0, 1]
+    '44': [1296, 0, 1],
+    '45': [Infinity, 0, 0, ['row2', 'b4']],
+    '46': [1313.6816711425781, 0, 1]
 }
 
 function check() {
@@ -46,6 +47,6 @@ function count(op, num) {
     ops = ['', '+', '*', '/', '**']
     const count = document.getElementById("count");
     if (op==0) { count.textContent = '1'; return; }
-    eval(`count.textContent = Number(count.textContent) ${ops[op]} num;`)
+    eval(`count.textContent = Number(count.textContent) ${ops[op]} num;`);
     check();
 }
